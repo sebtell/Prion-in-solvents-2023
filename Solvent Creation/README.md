@@ -1,4 +1,4 @@
-#The solvent creation has been performed with the aid of **ACPYPE** and followed the steps outlined in the **GROMACS** ArchWiki:
+# The solvent creation has been performed with the aid of **ACPYPE** and followed the steps outlined in the **GROMACS** ArchWiki:
 https://wiki.archlinux.org/title/GROMACS#Use_a_non-water_solvent
 
 >To use a non-water solvent with standard tools such as gmx pdb2gmx and gmx solvate do the following:
@@ -13,7 +13,7 @@ https://wiki.archlinux.org/title/GROMACS#Use_a_non-water_solvent
 >Now when you run gmx pdb2gmx this solvent model should be available for the applicable force field. Additionally you can use -cs solvent when running gmx solvate."
 
 
-#So in the general case: 
+# So in the general case: 
 First convert a PDB file of your future solvent into files that can be read by GROMACS through the aid of ACPYPE. You must choose what force field you will use before creating your solvent. The notebook *pdb_to_gromacs_with_acpype.ipynb* creates files for multiple force fields, Amber being one of them.
 
 Locate the files relevant to your force field and separate them from the rest. The important files are the .gro, .top, and posre.itp files. 
