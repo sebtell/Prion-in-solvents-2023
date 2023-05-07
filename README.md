@@ -3,7 +3,13 @@ Bachelor's Degree project aiming to simulate human prion protein in a number of 
 
 
 To Do:
+
+scrub nvt/npt?
+
 create simulation run
+
 write README when relevant
+
 write better description
+
 acknowledge the original jupyter notebook
