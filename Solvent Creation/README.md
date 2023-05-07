@@ -26,7 +26,9 @@ Do note that both the temperature and pressure equilibriation steps saves data v
 that you save the [atomtypes] from the topology file somewhere else when performing step 4. You will need to paste them into your topology file during the actual protein simulation, otherwise the force field can't read the input from your new solvent. More on how happens in the *Prion-in-solvents-2023/Simulation* folder. 
 
 The *end product* folders include the important files that you should possess after a successful solvent creation. In the *data_benzene/end product* folder you will find the following files.
+
 **atomtypes.top** : This file includes the [atomtypes] that were in the original topology file.
+
 **BEN.gro** : This file includes all 300 molecules of benzene that has underwent the equilibration. They have been renamed to SOL.
 **BEN.itp** : This file includes the information on how the benzene molecule acts in the Amber force field. The moleculetype has been renamed to SOL.
 **posre_BEN.itp** : This file includes the position restraints of benzene, should it be relevant. 
