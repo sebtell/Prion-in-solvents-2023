@@ -13,3 +13,5 @@ write README when relevant
 write better description
 
 acknowledge the original jupyter notebook
+
+add a file in solvent creation with the [atomtypes] and posres
