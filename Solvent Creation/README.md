@@ -22,6 +22,7 @@ Now, as per any of the *_creation* notebooks, you will create a box of 300 molec
 Perform the equilibration on the system (energy minimzation, temperature equilibration, pressure equilibration) and make sure that the density has reached the target value. If it hasn't, raise the length of the NPT step. It is the resulting *npt.gro* file that you will copy as per step 3 above. 
 Do note that both the temperature and pressure equilibriation steps saves data very frequently to perform heat capacity calculations through the *gms dos* command. I would not recommended to save data this frequently during your actual protein simulation.
 
-**It is important** that you save the [atomtypes] from the topology file somewhere else when performing step 4. You will need to paste them into your topology file during the actual protein simulation, otherwise the force field can't read the input from your new solvent. More on this in the *Prion-in-solvents-2023/Simulation* folder. 
-The *end product* folders include the important files that you should possess after a successful solvent creation. 
+# It is important 
+that you save the [atomtypes] from the topology file somewhere else when performing step 4. You will need to paste them into your topology file during the actual protein simulation, otherwise the force field can't read the input from your new solvent. More on this in the *Prion-in-solvents-2023/Simulation* folder. 
+The *end product* folders include the important files that you should possess after a successful solvent creation. These files have the molecule renamed as SOL.
 
