@@ -25,7 +25,7 @@ Do note that both the temperature and pressure equilibriation steps saves data v
 # It is important 
 that you save the [atomtypes] from the topology file somewhere else when performing step 4. You will need to paste them into your topology file during the actual protein simulation, otherwise the force field can't read the input from your new solvent. More on how happens in the *Prion-in-solvents-2023/Simulation* folder. 
 
-The *end product* folders include the important files that you should possess after a successful solvent creation. In the *data_benzene/end product* folder you will find the following files.
+The *end product* folders include the important files that you should possess after a successful solvent creation. You should manually edit your own files so that they appear like those you find in here. In the *data_benzene/end product* folder you will find the following files.
 
 **atomtypes.top** : This file includes the [atomtypes] that were in the original topology file.
 
