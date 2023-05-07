@@ -2,9 +2,9 @@
 Bachelor's Degree project aiming to simulate human prion protein in a number of different solvents
 
 
-To Do: 
-update solvent creation with correct names for input/
-create simulation run
-write README when relevant
-write better description
-acknowledge the original jupyter notebook
+To Do: \n
+update solvent creation with correct names for input\n
+create simulation run\n
+write README when relevant\n
+write better description\n
+acknowledge the original jupyter notebook\n
