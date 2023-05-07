@@ -1,0 +1,97 @@
+; EtO_GMX.top created by acpype (v: 2022.6.6) on Sun May  7 23:49:41 2023
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333333333
+
+[ atomtypes ]
+;name   bond_type     mass     charge   ptype   sigma         epsilon       Amb
+ c3       c3          0.00000  0.00000   A     3.39771e-01   4.51035e-01 ; 1.91  0.1078
+ hc       hc          0.00000  0.00000   A     2.60018e-01   8.70272e-02 ; 1.46  0.0208
+ h1       h1          0.00000  0.00000   A     2.42200e-01   8.70272e-02 ; 1.36  0.0208
+ oh       oh          0.00000  0.00000   A     3.24287e-01   3.89112e-01 ; 1.82  0.0930
+ ho       ho          0.00000  0.00000   A     5.37925e-02   1.96648e-02 ; 0.30  0.0047
+
+[ moleculetype ]
+;name            nrexcl
+ EtO              3
+
+[ atoms ]
+;   nr  type  resi  res  atom  cgnr     charge      mass       ; qtot   bond_type
+     1   c3     1   EtO    CB    1    -0.097100     12.01000 ; qtot -0.097
+     2   hc     1   EtO   HB1    2     0.044367      1.00800 ; qtot -0.053
+     3   hc     1   EtO   HB2    3     0.044367      1.00800 ; qtot -0.008
+     4   hc     1   EtO   HB3    4     0.044367      1.00800 ; qtot 0.036
+     5   c3     1   EtO    CA    5     0.131400     12.01000 ; qtot 0.167
+     6   h1     1   EtO   HA1    6     0.018700      1.00800 ; qtot 0.186
+     7   h1     1   EtO   HA2    7     0.018700      1.00800 ; qtot 0.205
+     8   oh     1   EtO    OH    8    -0.602801     16.00000 ; qtot -0.398
+     9   ho     1   EtO    HO    9     0.398000      1.00800 ; qtot 0.000
+
+[ bonds ]
+;   ai     aj funct   r             k
+     1      2   1    1.0970e-01    3.1455e+05 ;     CB - HB1   
+     1      3   1    1.0970e-01    3.1455e+05 ;     CB - HB2   
+     1      4   1    1.0970e-01    3.1455e+05 ;     CB - HB3   
+     1      5   1    1.5380e-01    1.9456e+05 ;     CB - CA    
+     5      6   1    1.0970e-01    3.1455e+05 ;     CA - HA1   
+     5      7   1    1.0970e-01    3.1455e+05 ;     CA - HA2   
+     5      8   1    1.4230e-01    2.4552e+05 ;     CA - OH    
+     8      9   1    9.7300e-02    4.7154e+05 ;     OH - HO    
+
+[ pairs ]
+;   ai     aj    funct
+     1      9      1 ;     CB - HO    
+     2      6      1 ;    HB1 - HA1   
+     2      7      1 ;    HB1 - HA2   
+     2      8      1 ;    HB1 - OH    
+     3      6      1 ;    HB2 - HA1   
+     3      7      1 ;    HB2 - HA2   
+     3      8      1 ;    HB2 - OH    
+     4      6      1 ;    HB3 - HA1   
+     4      7      1 ;    HB3 - HA2   
+     4      8      1 ;    HB3 - OH    
+     6      9      1 ;    HA1 - HO    
+     7      9      1 ;    HA2 - HO    
+
+[ angles ]
+;   ai     aj     ak    funct   theta         cth
+     1      5      6      1    1.0956e+02    3.9246e+02 ;     CB - CA     - HA1   
+     1      5      7      1    1.0956e+02    3.9246e+02 ;     CB - CA     - HA2   
+     1      5      8      1    1.1019e+02    7.0793e+02 ;     CB - CA     - OH    
+     2      1      3      1    1.0758e+02    3.2635e+02 ;    HB1 - CB     - HB2   
+     2      1      4      1    1.0758e+02    3.2635e+02 ;    HB1 - CB     - HB3   
+     2      1      5      1    1.0980e+02    3.9162e+02 ;    HB1 - CB     - CA    
+     3      1      4      1    1.0758e+02    3.2635e+02 ;    HB2 - CB     - HB3   
+     3      1      5      1    1.0980e+02    3.9162e+02 ;    HB2 - CB     - CA    
+     4      1      5      1    1.0980e+02    3.9162e+02 ;    HB3 - CB     - CA    
+     5      8      9      1    1.0726e+02    4.1003e+02 ;     CA - OH     - HO    
+     6      5      7      1    1.0846e+02    3.2468e+02 ;    HA1 - CA     - HA2   
+     6      5      8      1    1.1026e+02    5.2300e+02 ;    HA1 - CA     - OH    
+     7      5      8      1    1.1026e+02    5.2300e+02 ;    HA2 - CA     - OH    
+
+[ dihedrals ] ; propers
+; for gromacs 4.5 or higher, using funct 9
+;    i      j      k      l   func   phase     kd      pn
+     1      5      8      9      9     0.00   0.00000   0 ;     CB-    CA-    OH-    HO
+     2      1      5      6      9     0.00   0.65084   3 ;    HB1-    CB-    CA-   HA1
+     2      1      5      7      9     0.00   0.65084   3 ;    HB1-    CB-    CA-   HA2
+     2      1      5      8      9     0.00   0.75312   3 ;    HB1-    CB-    CA-    OH
+     2      1      5      8      9     0.00   2.13384   1 ;    HB1-    CB-    CA-    OH
+     3      1      5      6      9     0.00   0.65084   3 ;    HB2-    CB-    CA-   HA1
+     3      1      5      7      9     0.00   0.65084   3 ;    HB2-    CB-    CA-   HA2
+     3      1      5      8      9     0.00   0.75312   3 ;    HB2-    CB-    CA-    OH
+     3      1      5      8      9     0.00   2.13384   1 ;    HB2-    CB-    CA-    OH
+     4      1      5      6      9     0.00   0.65084   3 ;    HB3-    CB-    CA-   HA1
+     4      1      5      7      9     0.00   0.65084   3 ;    HB3-    CB-    CA-   HA2
+     4      1      5      8      9     0.00   0.75312   3 ;    HB3-    CB-    CA-    OH
+     4      1      5      8      9     0.00   2.13384   1 ;    HB3-    CB-    CA-    OH
+     6      5      8      9      9     0.00   0.47279   3 ;    HA1-    CA-    OH-    HO
+     7      5      8      9      9     0.00   0.47279   3 ;    HA2-    CA-    OH-    HO
+
+[ system ]
+ EtO
+
+[ molecules ]
+; Compound        nmols
+ EtO              1     

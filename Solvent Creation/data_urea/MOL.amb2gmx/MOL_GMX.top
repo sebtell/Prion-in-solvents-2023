@@ -1,4 +1,4 @@
-; MOL_GMX.top created by acpype (v: 2022.6.6) on Thu Apr 20 21:57:29 2023
+; MOL_GMX.top created by acpype (v: 2022.6.6) on Sun May  7 23:50:50 2023
 
 [ defaults ]
 ; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ

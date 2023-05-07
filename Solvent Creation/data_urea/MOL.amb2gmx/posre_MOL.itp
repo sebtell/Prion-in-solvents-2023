@@ -1,4 +1,4 @@
-; posre_BEN.itp created by acpype (v: 2022.6.6) on Tue Apr 18 19:08:14 2023
+; posre_MOL.itp created by acpype (v: 2022.6.6) on Sun May  7 23:50:50 2023
 
 [ position_restraints ]
 ; atom  type      fx      fy      fz
@@ -6,5 +6,3 @@
      2     1  1000  1000  1000
      3     1  1000  1000  1000
      4     1  1000  1000  1000
-     5     1  1000  1000  1000
-     6     1  1000  1000  1000
