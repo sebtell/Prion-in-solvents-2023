@@ -1,0 +1,8 @@
+; posre_MOL.itp created by acpype (v: 2022.6.6) on Thu Apr 20 21:57:29 2023
+
+[ position_restraints ]
+; atom  type      fx      fy      fz
+     1     1  1000  1000  1000
+     2     1  1000  1000  1000
+     3     1  1000  1000  1000
+     4     1  1000  1000  1000
