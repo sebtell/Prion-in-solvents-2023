@@ -1,0 +1,59 @@
+;NVT
+
+; Run control parameters
+define              = -DPOSRES
+integrator          = md		; molecular dynamics
+dt                  = 0.002		; time increment
+nsteps              = 50000		; the total number of simulation steps to be performed
+nstxout             = 5000		; how often to output the coordinates of the system
+nstvout             = 500
+nstlog              = 500
+nstenergy           = 500
+nstxtcout           = 500
+
+; Output control options
+tc-grps             = Protein Non-Protein
+tcoupl              = v-rescale		; temperature coupling algorithm
+tau_t               = 0.1 0.1		; temperature relaxation time 
+ref_t               = 310 310		; reference temperature
+pcoupl              = no        	; no pressure coupling in NVT
+gen_vel             = yes  
+gen_temp            = 310.0 
+gen_seed            = -1
+pbc                 = xyz
+
+
+; Neighborsearching parameters
+cutoff-scheme            = Verlet
+ns_type                  = grid
+nstlist                  = 10
+rlist                    = 1.2
+coulombtype              = PME
+rcoulomb                 = 1.2
+vdwtype                  = PME
+rvdw                     = 1.2
+
+
+pme_order                = 4
+fourierspacing           = 0.16
+
+
+; Bond parameters
+continuation           	 = no
+constraints              = all-bonds
+constraint_algorithm     = lincs
+lincs_order              = 4
+lincs_warnangle          = 30
+
+
+rvdw_switch              = 0
+
+fourier_nx               = 0
+fourier_ny               = 0
+fourier_nz               = 0
+
+ewald_rtol               = 1e-5
+
+
+
+DispCorr                 = EnerPres

@@ -1,0 +1,58 @@
+
+; Run control parameters
+integrator          = md		; molecular dynamics
+dt                  = 0.002		; time increment
+nsteps              = 500000		; the total number of simulation steps to be performed
+nstxout             = 0			; how often to output the coordinates of the system
+nstvout             = 0
+nstfout             = 0
+nstlog              = 5000
+nstenergy           = 5000
+nstxout-compressed  = 5000      ; save compressed coordinates every 10.0 ps
+compressed-x-grps   = System    ; save the whole system
+
+; Output control options
+tc-grps             = Protein Non-Protein
+tcoupl              = v-rescale		; temperature coupling algorithm
+tau_t               = 0.1 0.1		; temperature relaxation time 
+ref_t               = 310 310		; reference temperature
+pcoupl              = Parrinello-Rahman	; pressure coupling algorithm
+pcoupltype          = isotropic		; pressure coupling algorithm
+tau_p               = 2.0		; pressure relaxation time
+ref_p               = 1.0		; reference pressure
+compressibility     = 4.5e-5		; compressibility of the system
+gen_vel             = no
+pbc                 = xyz
+
+
+; Neighborsearching parameters
+cutoff-scheme            = Verlet
+ns_type                  = grid
+nstlist                  = 10
+rlist                    = 1.2
+coulombtype              = PME
+rcoulomb                 = 1.2
+vdwtype                  = PME
+rvdw                     = 1.2
+
+pme_order                = 4
+fourierspacing           = 0.16
+
+
+; Bond parameters
+continuation           	 = yes
+constraints              = all-bonds
+constraint_algorithm     = lincs
+lincs_order              = 4
+lincs_warnangle          = 30
+
+
+rvdw_switch              = 0
+fourier_nx               = 0
+fourier_ny               = 0
+fourier_nz               = 0
+
+ewald_rtol               = 1e-5
+
+
+DispCorr                 = EnerPres
