@@ -17,8 +17,11 @@ https://wiki.archlinux.org/title/GROMACS#Use_a_non-water_solvent
 First convert a PDB file of your future solvent into files that can be read by GROMACS through the aid of ACPYPE. You must choose what force field you will use before creating your solvent. The notebook *pdb_to_gromacs_with_acpype.ipynb* creates files for multiple force fields, Amber being one of them.
 
 Locate the files relevant to your force field and separate them from the rest. The important files are the .gro, .top, and posre.itp files. 
+Now, as per any of the *_creation* notebooks, you will create a box of 300 molecules with the aid of the .gro file. You will also need a relevant topology file, which is created by editing the end of the .top file to include 300 molecules instead of one. The folders needed to run the *_creation* notebooks already include their relevant *300.top* file for ease of use.  
 
+Perform the equilibration on the system (energy minimzation, temperature equilibration, pressure equilibration) and make sure that the density has reached the target value. If it hasn't, raise the length of the NPT step. It is the resulting *npt.gro* file that you will copy as per step 3 above. 
+Do note that both the temperature and pressure equilibriation steps saves data very frequently to perform heat capacity calculations through the *gms dos* command. I would not recommended to save data this frequently during your actual protein simulation.
 
-You will receive multiple files
+**It is important** that you save the [atomtypes] from the topology file somewhere else when performing step 4. You will need to paste them into your topology file during the actual protein simulation, otherwise the force field can't read the input from your new solvent. More on this in the *Prion-in-solvents-2023/Simulation* folder. 
+The *end product* folders include the important files that you should possess after a successful solvent creation. 
 
-You should receive a folder of files including a .gro, .top, and posre.itp file. These are the important
