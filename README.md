@@ -6,13 +6,11 @@ To Do:
 
 scrub nvt/npt?
 
-create simulation run
-
-write README when relevant
+write README's
 
 write better description
 
-acknowledge the original jupyter notebook
+acknowledge the original jupyter notebook, link to acpype and gromacs
 
 add a file in solvent creation with the [atomtypes] and posres
 
