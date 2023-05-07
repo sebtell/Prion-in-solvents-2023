@@ -1,0 +1,8 @@
+; MOL_GMX.top created by acpype (v: 2022.6.6) on Sun May  7 23:50:50 2023
+
+[ atomtypes ]
+;name   bond_type     mass     charge   ptype   sigma         epsilon       Amb
+ nt       nt          0.00000  0.00000   A     3.35904e-01   3.56058e-01 ; 1.89  0.0851
+ o        o           0.00000  0.00000   A     3.04812e-01   6.12119e-01 ; 1.71  0.1463
+ c        c           0.00000  0.00000   A     3.31521e-01   4.13379e-01 ; 1.86  0.0988
+ hn       hn          0.00000  0.00000   A     1.10650e-01   4.18400e-02 ; 0.62  0.0100
