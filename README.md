@@ -3,7 +3,6 @@ Bachelor's Degree project aiming to simulate human prion protein in a number of 
 
 
 To Do:
-update solvent creation with correct names for input
 create simulation run
 write README when relevant
 write better description
