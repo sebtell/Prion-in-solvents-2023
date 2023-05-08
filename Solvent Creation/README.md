@@ -1,5 +1,5 @@
 # The solvent creation has been performed with the aid of **ACPYPE** and followed the steps outlined in the **GROMACS** ArchWiki:
-https://wiki.archlinux.org/title/GROMACS#Use_a_non-water_solvent
+[Use a non-water solvent](https://wiki.archlinux.org/title/GROMACS#Use_a_non-water_solvent)
 
 >To use a non-water solvent with standard tools such as gmx pdb2gmx and gmx solvate do the following:
 
@@ -23,7 +23,7 @@ Perform the equilibration on the system (energy minimzation, temperature equilib
 Do note that both the temperature and pressure equilibriation steps saves data very frequently to perform heat capacity calculations through the *gms dos* command. I would not recommended to save data this frequently during your actual protein simulation.
 
 # It is important 
-that you save the [atomtypes] from the topology file somewhere else when performing step 4. You will need to paste them into your topology file during the actual protein simulation, otherwise the force field can't read the input from your new solvent. More on how happens in the *Prion-in-solvents-2023/Simulation* folder. 
+that you save the [atomtypes] from the topology file somewhere else when performing step 4. You will need to paste them into your system topology file during the actual protein simulation, otherwise the force field can't read the input from your new solvent. More on how this is done in the *Prion-in-solvents-2023/Simulation* folder. 
 
 The *end product* folders include the important files that you should possess after a successful solvent creation. You should manually edit your own files so that they appear like those you find in here. In the *data_benzene/end product* folder you will find the following files:
 
