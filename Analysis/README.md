@@ -3,7 +3,11 @@ If you wish to use these commands directly in a terminal then do mind the **prin
 
 # The analyses performed are, in order of appearance:
 1 Root Mean Square Deviation (gmx rms)
+
 2 Radius of Gyration (gmx gyrate)
+
 3 Root Mean Square Fluctation (gmx rmsf)
+
 4 Mean Square Displacement (gmx msd)
+
 5 Solvent Accessible Surface Area (gmx sasa)
