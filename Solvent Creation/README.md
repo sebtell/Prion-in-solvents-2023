@@ -1,5 +1,5 @@
 # The solvent creation has been performed with the aid of **ACPYPE** and followed the steps outlined in the **GROMACS** ArchWiki:
-https://wiki.archlinux.org/title/GROMACS#Use_a_non-water_solvent
+[Use a non-water solvent](https://wiki.archlinux.org/title/GROMACS#Use_a_non-water_solvent)
 
 >To use a non-water solvent with standard tools such as gmx pdb2gmx and gmx solvate do the following:
 
