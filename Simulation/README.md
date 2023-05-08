@@ -1,4 +1,4 @@
-The four notebooks above perform a 1 nanosecond protein simulation run of the human prion protein in their respective solvent after a short equilibration. All !gmx commands used and the explanation of their purpose can be found in the [GROMACS manual](https://manual.gromacs.org/current/user-guide/cmdline.html). 
+The four notebooks above perform a 1 nanosecond protein simulation run of the human prion protein in their respective solvent after a short equilibration. All *!gmx* commands used and the explanation of their purpose can be found in the [GROMACS manual](https://manual.gromacs.org/current/user-guide/cmdline.html). 
 If you wish to use these commands directly in a terminal then do mind the **print** prompts. Many gmx commands require further input and this is a workaround for performing the simulation in a jupyter notebook format.
 
 # If you want to run these simulations
