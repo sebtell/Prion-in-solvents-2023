@@ -6,8 +6,11 @@ If you wish to use these commands directly in a terminal then do mind the **prin
 
 2 Radius of Gyration (gmx gyrate)
 
-3 Root Mean Square Fluctation (gmx rmsf)
+3 Root Mean Square Fluctuation (gmx rmsf)
 
 4 Mean Square Displacement (gmx msd)
 
 5 Solvent Accessible Surface Area (gmx sasa)
+
+# Explanation for cutoffs used for Root Mean Square Fluctuation and Solvent Accessible Surface Area
+You may notice that these commands are performed on a subset of the time interval of 1 ns. This subset corresponds to what has been estimated as the interval when the protein has finally stabilized, which has been marked with a green color in the RMSD graph. With any other simulation data you should make sure that you have an appropriate subset.  
