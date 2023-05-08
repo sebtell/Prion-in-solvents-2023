@@ -4,10 +4,6 @@ Bachelor's Degree project aiming to simulate human prion protein in a number of 
 
 To Do:
 
-write README's
-
 write better description
 
 acknowledge the original jupyter notebook, link to acpype and gromacs
-
-Test if [atomtypes] kan be forced into .gro or .itp without issue
