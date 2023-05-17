@@ -14,7 +14,7 @@
 
 
 # So in the general case: 
-First convert a PDB file of your future solvent into files that can be read by GROMACS through the aid of ACPYPE. You must choose what force field you will use before creating your solvent. The notebook *pdb_to_gromacs_with_acpype.ipynb* creates files for multiple force fields, Amber being one of them.
+First convert a PDB file of your future solvent into files that can be read by GROMACS through the aid of ACPYPE. You must choose what force field you will use before creating your solvent. The notebook *pdb_to_gromacs_with_acpype.ipynb* creates files for multiple force fields, Amber being one of them. (Note: ACPYPE was used in a separate environment.)
 
 Locate the files relevant to your force field and separate them from the rest. The important files are the .gro, .top, and posre.itp files. 
 Now, as per any of the *_creation* notebooks, you will create a box of 300 molecules with the aid of the .gro file. You will also need a relevant topology file, which is created by editing the end of the .top file to include 300 molecules instead of one. The folders needed to run the *_creation* notebooks already include their relevant *300.top* file for ease of use.  
@@ -34,3 +34,10 @@ The *end product* folders include the important files that you should possess af
 **BEN.itp** : This file includes the information on how the benzene molecule acts in the Amber force field. The moleculetype has been renamed to SOL.
 
 **posre_BEN.itp** : This file includes the position restraints of benzene, should it be relevant. 
+
+# The PDB files of benzene, ethanol, and urea
+[Benzene](https://www.ch.ic.ac.uk/rzepa/mim/environmental/html/)
+
+Ethanol: Created by Richard Tjörnhammar 
+
+[Urea](https://www.ch.ic.ac.uk/rzepa/mim/environmental/html/)
