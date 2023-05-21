@@ -2,7 +2,7 @@ title       = Amber steepest descent energy minimisation
 
 ; Parameters describing what to do, when to stop and what to save
 integrator  = steep  ; Algorithm (steep = steepest descent minimization)
-emtol       = 40.0 ; Stop minimization when the maximum force < 60.0 kJ/mol/nm
+emtol       = 40.0 ; Stop minimization when the maximum force < 40.0 kJ/mol/nm
 emstep      = 0.01   ; Minimization step size
 nstenergy   = 500    ; save energies every 1.0 ps, so we can observe if we are successful
 nsteps      = -1     ; run as long as we need
