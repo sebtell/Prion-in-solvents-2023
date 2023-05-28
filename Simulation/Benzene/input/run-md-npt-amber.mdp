@@ -13,14 +13,14 @@ nstxtcout           = 500
 
 ; Output control options
 tc-grps             = Protein Non-Protein
-tcoupl              = v-rescale		; temperature coupling algorithm
-tau_t               = 0.1 0.1		; temperature relaxation time 
-ref_t               = 310 310		; reference temperature
-pcoupl              = Parrinello-Rahman	; pressure coupling algorithm
-pcoupltype          = isotropic		; pressure coupling algorithm
-tau_p               = 2.0		; pressure relaxation time
-ref_p               = 1.0		; reference pressure
-compressibility     = 4.5e-5		; compressibility of the system
+tcoupl              = v-rescale		        ; temperature coupling algorithm
+tau_t               = 0.1 		            ; temperature relaxation time 
+ref_t               = 310 	              ; reference temperature
+pcoupl              = Parrinello-Rahman	  ; pressure coupling algorithm
+pcoupltype          = isotropic		        ; pressure coupling algorithm
+tau_p               = 2.0		              ; pressure relaxation time
+ref_p               = 1.0		              ; reference pressure
+compressibility     = 4.5e-5		          ; compressibility of the system
 refcoord_scaling    = com
 gen_vel             = no
 pbc                 = xyz
