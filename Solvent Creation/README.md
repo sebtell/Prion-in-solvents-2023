@@ -35,7 +35,7 @@ The *end product* folders include the important files that you should possess af
 
 **posre_BEN.itp** : This file includes the position restraints of benzene, should it be relevant. 
 
-*SOL for solvent. The Urea has not been renamed as it is to be used in a mixture with tip4p.
+*SOL for solvent. The Urea is named differently as it is to be used in a mixture with tip4p.
 
 # The PDB files of benzene, ethanol, and urea
 [Benzene](https://www.ch.ic.ac.uk/rzepa/mim/environmental/html/)
