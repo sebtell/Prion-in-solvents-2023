@@ -1,20 +1,19 @@
-; MOL_GMX.top created by acpype (v: 2022.6.6) on Thu Apr 20 21:57:29 2023
-
+; URE_GMX.top created by acpype (v: 2022.6.6) on Thu Apr 20 21:57:29 2023
 
 [ moleculetype ]
 ;name            nrexcl
- SOL              3
+ URE              3
 
 [ atoms ]
 ;   nr  type  resi  res  atom  cgnr     charge      mass       ; qtot   bond_type
-     1   nt     1   MOL    N1    1    -0.642000     14.01000 ; qtot -0.642
-     2   nt     1   MOL    N2    2    -0.642000     14.01000 ; qtot -1.284
-     3    o     1   MOL    O3    3    -0.639100     16.00000 ; qtot -1.923
-     4    c     1   MOL    C4    4     0.727100     12.01000 ; qtot -1.196
-     5   hn     1   MOL   H11    5     0.299000      1.00800 ; qtot -0.897
-     6   hn     1   MOL   H12    6     0.299000      1.00800 ; qtot -0.598
-     7   hn     1   MOL   H21    7     0.299000      1.00800 ; qtot -0.299
-     8   hn     1   MOL   H22    8     0.299000      1.00800 ; qtot 0.000
+     1   nt     1   URE    N1    1    -0.642000     14.01000 ; qtot -0.642
+     2   nt     1   URE    N2    2    -0.642000     14.01000 ; qtot -1.284
+     3    o     1   URE    O3    3    -0.639100     16.00000 ; qtot -1.923
+     4    c     1   URE    C4    4     0.727100     12.01000 ; qtot -1.196
+     5   hn     1   URE   H11    5     0.299000      1.00800 ; qtot -0.897
+     6   hn     1   URE   H12    6     0.299000      1.00800 ; qtot -0.598
+     7   hn     1   URE   H21    7     0.299000      1.00800 ; qtot -0.299
+     8   hn     1   URE   H22    8     0.299000      1.00800 ; qtot 0.000
 
 [ bonds ]
 ;   ai     aj funct   r             k
@@ -71,5 +70,3 @@
      1      2      4      3      4   180.00  43.93200   2 ;     N1-    N2-    C4-    O3
      4      7      2      8      4   180.00   4.60240   2 ;     C4-   H21-    N2-   H22
      6      1      5      4      4   180.00   4.60240   2 ;    H12-    N1-   H11-    C4
-
-
