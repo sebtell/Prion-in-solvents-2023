@@ -35704,6 +35704,7 @@ Protein_chain_A     3
      2     1  1000  1000  1000
      3     1  1000  1000  1000
      4     1  1000  1000  1000
+#endif     
 
 ; Include topology for ions
 #include "amber03.ff/ions.itp"
