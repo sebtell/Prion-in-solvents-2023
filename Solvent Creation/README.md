@@ -29,11 +29,13 @@ The *end product* folders include the important files that you should possess af
 
 **atomtypes.top** : This file includes the [atomtypes] that were in the original topology file.
 
-**BEN.gro** : This file includes all 300 molecules of benzene that has underwent the equilibration. They have been renamed to SOL.
+**BEN.gro** : This file includes all 300 molecules of benzene that has underwent the equilibration. They have been renamed to SOL*.
 
-**BEN.itp** : This file includes the information on how the benzene molecule acts in the Amber force field. The moleculetype has been renamed to SOL.
+**BEN.itp** : This file includes the information on how the benzene molecule acts in the Amber force field. The moleculetype has been renamed to SOL*.
 
 **posre_BEN.itp** : This file includes the position restraints of benzene, should it be relevant. 
+
+*SOL for solvent. The Urea has not been renamed as it is to be used in a mixture with tip4p.
 
 # The PDB files of benzene, ethanol, and urea
 [Benzene](https://www.ch.ic.ac.uk/rzepa/mim/environmental/html/)
